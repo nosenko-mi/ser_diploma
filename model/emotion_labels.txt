@@ -1,0 +1,8 @@
+fear
+contempt
+happiness
+anger
+sadness
+neutral
+surprise
+calm
