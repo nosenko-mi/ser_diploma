@@ -2,6 +2,7 @@
 /model/saved_models
 /model/features
 /model/tmp
+/model/__pycache__
 /img
 /.venv
 .vscode
