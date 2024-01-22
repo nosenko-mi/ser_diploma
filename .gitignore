@@ -2,5 +2,6 @@
 /model/saved_models
 /model/features
 /model/tmp
+/img
 /.venv
 .vscode
