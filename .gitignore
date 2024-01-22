@@ -1,3 +1,6 @@
 /data
+/model/saved_models
+/model/features
+/model/tmp
 /.venv
 .vscode
