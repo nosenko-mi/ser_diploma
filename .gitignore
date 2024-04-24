@@ -1,6 +1,7 @@
 /data
 /model/saved_models
 /model/saved_model
+/model/old_models_useless
 /model/k_fold
 /model/features
 /model/tmp
