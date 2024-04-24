@@ -33,7 +33,7 @@ def __get_mel_flat(data, sample_rate, n_mels=64, n_fft=1024, hop_length=690):
     mel = librosa.feature.melspectrogram(
         y=data, sr=sample_rate, n_fft=n_fft, hop_length=hop_length, n_mels=n_mels)
     mel = librosa.power_to_db(mel, ref=np.max)
-    print(mel.shape)
+    # print(mel.shape)
     return mel.flatten()
 
 
