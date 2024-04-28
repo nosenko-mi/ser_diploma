@@ -5,4 +5,3 @@ anger
 sadness
 neutral
 surprise
-calm
