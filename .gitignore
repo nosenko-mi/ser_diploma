@@ -6,6 +6,7 @@
 /model/features
 /model/tmp
 /model/__pycache__
+/model/logs
 /img
 /.venv
 .vscode
