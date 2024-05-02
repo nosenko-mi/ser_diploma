@@ -3,15 +3,16 @@ import numpy as np
 import librosa
 
 
-def load_and_scale(df: pd.DataFrame, fixed_length: int, scale=True):
+def load_and_scale(df: pd.DataFrame, fixed_length: int, sr=22050, scale=True):
     data = []
     labels = []
     a = True
     for _, row in df.iterrows():
-        audio, sample_rate = librosa.load(row['path'])
+        audio, sample_rate = librosa.load(row['path'], sr=sr)
         if a:
             print(sample_rate)
             a = False
+        audio, index = librosa.effects.trim(audio, top_db=50)
         audio = librosa.util.fix_length(audio, size=fixed_length)
         if scale:
             audio = audio / 32768.0
